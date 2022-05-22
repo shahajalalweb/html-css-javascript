@@ -1,0 +1,29 @@
+.slideshow-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.slideshow-element {
+    margin-top: 40%;
+    width: 25%;
+    position: absolute;
+    transform: scale(0);
+    transition: 0.3;
+}
+@media (max-width: 650px) {
+    .slideshow-element {
+        margin-top: 100%;
+        width: 70%;
+    }
+}
+img {
+width: 100%;
+border-radius: 20px;
+border: 1px solid black;
+}
+.slideshow-element.current {
+    transform: scale(1);
+    transition: 0.3s;
+  }
